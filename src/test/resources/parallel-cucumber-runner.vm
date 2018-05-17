@@ -1,0 +1,28 @@
+#parse("/array.java.vm")
+#if ($packageName)
+package $packageName;
+
+#end
+import cucumber.api.CucumberOptions;
+import cucumber.api.SnippetType;
+import net.serenitybdd.cucumber.CucumberWithSerenity;
+import org.junit.runner.RunWith;
+
+import javax.annotation.Generated;
+
+@Generated("cucumber-jvm-parallel-plugin")
+@RunWith(CucumberWithSerenity.class)
+@CucumberOptions(
+        features = {"$featureFile"},
+        snippets = SnippetType.CAMELCASE,
+        glue = #stringArray($glue),
+        plugin = #stringArray($plugins),
+#if(!$featureFile.contains(".feature:") && $tags)
+        tags = #stringArray($tags),
+#end
+        strict = $strict,
+        monochrome = $monochrome
+)
+public class $className {
+    // Run single cucumber scenario
+}
