@@ -25,8 +25,10 @@
         <jetty.version>9.4.7.v20170914</jetty.version>
         <wiremock.version>2.17.0</wiremock.version>
         <cucumber.version>2.4.0</cucumber.version>
-        <serenity.version>1.9.7</serenity.version>
-        <serenity-cucumber.version>1.9.5</serenity-cucumber.version>
+        <serenity-core.version>1.9.17</serenity-core.version>
+        <serenity-cucumber.version>1.9.7</serenity-cucumber.version>
+        <serenity-junit.version>1.9.17</serenity-junit.version>
+        <serenity-rest-assured.version>1.9.17</serenity-rest-assured.version>
         <logback.version>1.2.3</logback.version>
         <cucumber-jvm-parallel-plugin.version>5.0.0</cucumber-jvm-parallel-plugin.version>
         <maven-surefire-plugin.version>2.21.0</maven-surefire-plugin.version>
@@ -76,7 +78,7 @@
         <dependency>
             <groupId>net.serenity-bdd</groupId>
             <artifactId>serenity-core</artifactId>
-            <version>${serenity.version}</version>
+            <version>${serenity-core.version}</version>
         </dependency>
         <dependency>
             <groupId>net.serenity-bdd</groupId>
@@ -86,12 +88,12 @@
         <dependency>
             <groupId>net.serenity-bdd</groupId>
             <artifactId>serenity-junit</artifactId>
-            <version>${serenity.version}</version>
+            <version>${serenity-junit.version}</version>
         </dependency>
         <dependency>
             <groupId>net.serenity-bdd</groupId>
             <artifactId>serenity-rest-assured</artifactId>
-            <version>${serenity.version}</version>
+            <version>${serenity-rest-assured.version}</version>
         </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>
