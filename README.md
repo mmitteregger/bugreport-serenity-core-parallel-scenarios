@@ -1,6 +1,7 @@
 # Introduction
 
-Example project for a bug report to https://github.com/serenity-bdd/serenity-core/ that produces lots of errors during parallel execution of cucumber scenarios.
+Example project for a bug report to serenity-core that produces lots of errors during parallel execution of cucumber scenarios:
+https://github.com/serenity-bdd/serenity-core/issues/1254
 
 # Build
 
